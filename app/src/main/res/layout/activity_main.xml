@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rootView">
+
+    <com.queensherainfotech.emojilibrary.EmojiTextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="26sp"
+        android:text="Enter text below"/>
+
+    <ImageView
+        android:id="@+id/btnEmoji"
+        android:layout_width="40sp"
+        android:layout_height="40sp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:padding="3sp"
+        android:src="@mipmap/ic_smiley" />
+
+    <ImageView
+        android:id="@+id/btnSubmit"
+        android:layout_width="40sp"
+        android:layout_height="40sp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:padding="3sp"
+        android:src="@android:drawable/ic_menu_send" />
+
+    <com.queensherainfotech.emojilibrary.EmojiEditText
+        android:id="@+id/emojiEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toStartOf="@id/btnSubmit"
+        android:layout_toEndOf="@id/btnEmoji"
+        android:inputType="textMultiLine"
+        android:imeOptions="actionNext"/>
+</RelativeLayout>

@@ -1,0 +1,2 @@
+include ':app', ':emojilibrary'
+rootProject.name='QSITEmoji'
